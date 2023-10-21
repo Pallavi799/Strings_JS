@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // TASK-1
+        // CHECK WHETHER THE NUMBER IS INDIAN OR NOT
+        var a = prompt("Enter 10 digit number");
+        if((a.charAt("0")==9||a.charAt("0")==8||a.charAt("0")==7)&&a.length==10){
+            console.log("It is an Indian Numbrer");
+        }
+        else{
+            console.log("It is not an Indian Number");
+        }
+
+        // TASK-2
+        // REMOVE SPACES FROM STRING
+        var a = "Pa  llavi";
+        var b = ""
+        for (i = 0; i < a.length; i++) {
+            if (a[i] !== " ") {
+               b= b+a[i];
+            }
+        }
+        console.log(b);
+
+        // TASK-3
+        // REMOVE @ FROM STRING 
+        var a = "pa@ll@av@i@123";
+        var b="";
+        for(i=0;i<a.length;i++){
+            if(a[i]!== "@"){
+                b = b+a[i];
+            }
+        }
+        console.log(b);
+
+        // TASK-4
+        // PPRINT THE ODD INDEX STRING
+        var a = "JavaScript";
+        var b="";
+        for(i=0;i<a.length;i++){
+            if(i%2!=0){
+                b=b+a[i];
+            }
+        }
+        console.log(b);
+
+        // TASK-5
+        // COUNT NUMBER OF "A" PRESENT IN THE STRING
+        var a = "pallavi";
+        var b="";
+        let count=0;
+        for(i=0;i<a.length;i++){
+            if(a[i]=="a"){
+                b=b+a[i];
+                count++;
+            }
+        }
+        console.log(b);
+        console.log(count);
+    </script>
+</body>
+
+</html>
